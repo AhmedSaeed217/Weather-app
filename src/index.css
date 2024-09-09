@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -46,18 +47,14 @@ input[type="search"]::-webkit-search-results-decoration {
   --black-alpha-10: hsla(0, 0%, 0%, 0.1);
 
   /*Gradient color */
-  --gradient-1: linear-gradient(
-    180deg,
-    hsla(270, 5%, 7%, 0) 0%,
-    hsla(270, 5%, 7%, 0.8) 65%,
-    hsl(270, 5%, 7%) 100%
-  );
-  --gradient-2: linear-gradient(
-    180deg,
-    hsla(260, 5%, 12%, 0) 0%,
-    hsla(260, 5%, 12%, 0.8) 65%,
-    hsl(260, 5%, 12%) 100%
-  );
+  --gradient-1: linear-gradient(180deg,
+      hsla(270, 5%, 7%, 0) 0%,
+      hsla(270, 5%, 7%, 0.8) 65%,
+      hsl(270, 5%, 7%) 100%);
+  --gradient-2: linear-gradient(180deg,
+      hsla(260, 5%, 12%, 0) 0%,
+      hsla(260, 5%, 12%, 0.8) 65%,
+      hsl(260, 5%, 12%) 100%);
 
   /* Font Family  */
   --ff-nunito-sans: "Nunito Sans", sans-serif;
@@ -95,13 +92,6 @@ li {
   list-style: none;
 }
 
-a,
-img,
-span,
-button,
-input {
-  display: block;
-}
 
 a {
   text-decoration: none;
@@ -146,6 +136,7 @@ body {
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--white-alpha-8);
   border-radius: var(--radius-pill);
