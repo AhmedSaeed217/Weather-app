@@ -1,0 +1,13 @@
+.home {
+  margin-top: 20px;
+}
+.home .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.home .container aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

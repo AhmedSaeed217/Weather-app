@@ -1,0 +1,45 @@
+.now {
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 350px;
+  height: 350px;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  border-radius: var(--radius-28);
+}
+
+.now h4 {
+  font-size: var(--title-1);
+}
+
+.now .now-details {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.now .now-details .temprature {
+  font-size: var(--heading);
+}
+
+.now .now-details img {
+  width: 60px;
+}
+
+.now .status {
+  font-size: var(--title-3);
+}
+
+.now hr {
+  background-color: var(--surface);
+}
+
+.now .date,
+.now .location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--on-surface-variant);
+}
