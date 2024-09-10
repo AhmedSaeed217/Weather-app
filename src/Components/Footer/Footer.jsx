@@ -5,11 +5,11 @@ function Footer() {
     return (
         <div className='footer'>
             <div className="container">
-                <p>Copyright 2024&copy; <a target='_blank' href="https://a-saeed.netlify.app/">Ahmed Saeed.</a> All Rights Reserved</p>
+                <p>Copyright 2024&copy; Developed By <a target='_blank' href="https://a-saeed.netlify.app/" rel="noreferrer">Ahmed Saeed.</a> All Rights Reserved</p>
                 <div className="openweather-rights">
                     <span>Powered By</span>
 
-                    <img src={openWeather} alt="open weather image" />
+                    <img src={openWeather} alt="open weather" />
 
                     <span>Design By <a href="https://x.com/codewithsadee">Sadee</a></span>
                 </div>

@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Now from "../../Components/Now/Now";
 import Forecast from "../../Components/Forecast/Forecast";
+import Highlights from "../../Components/Highlights/Highlights";
 function Home() {
   return (
     <div className="home">
@@ -11,7 +12,9 @@ function Home() {
           <Forecast />
         </aside>
 
-        <main></main>
+        <main>
+          <Highlights />
+        </main>
       </div>
     </div>
   );
