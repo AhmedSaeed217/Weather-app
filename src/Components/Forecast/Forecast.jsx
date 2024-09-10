@@ -57,6 +57,40 @@ export default function Forecast() {
             <span>Saturday</span>
           </div>
         </div>
+        <div className="day-details">
+          <div className="temp">
+            <img src={pic2} alt="" />
+            <span>
+              4<sup>&deg;</sup>
+            </span>
+          </div>
+
+          <div className="date">
+            <span>5 Mar</span>
+          </div>
+
+          <div className="day">
+            <span>Sunday</span>
+          </div>
+        </div>
+
+        <div className="day-details">
+          <div className="temp">
+            <img src={pic2} alt="" />
+            <span>
+              5<sup>&deg;</sup>
+            </span>
+          </div>
+
+          <div className="date">
+            <span>6 Mar</span>
+          </div>
+
+          <div className="day">
+            <span>Monday</span>
+          </div>
+        </div>
+
       </div>
     </div>
   );

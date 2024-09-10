@@ -55,14 +55,37 @@ function Highlights() {
           </div>
         </div>
         <div className="bottom-highlights">
-          <div className="humidity">
+          <div className="bottom-highlights-details">
             <span>Humidity</span>
-            <i class="fa-solid fa-droplet"></i>
-            <p>82%</p>
+            <div className="details">
+              <i className="fa-solid fa-droplet"></i>
+              <p>82%</p>
+            </div>
           </div>
-          <div className="pressure"></div>
-          <div className="visibility"></div>
-          <div className="feels-like"></div>
+
+          <div className="bottom-highlights-details">
+            <span>Pressure</span>
+            <div className="details">
+              <i className="fas fa-water"></i>
+              <p>1025hPa</p>
+            </div>
+          </div>
+
+          <div className="bottom-highlights-details">
+            <span>Visibility</span>
+            <div className="details">
+              <i className="far fa-eye"></i>
+              <p>10km</p>
+            </div>
+          </div>
+
+          <div className="bottom-highlights-details">
+            <span>Feels Like</span>
+            <div className="details">
+              <i className="fas fa-temperature-high"></i>
+              <p>2<sup>°</sup>c</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
