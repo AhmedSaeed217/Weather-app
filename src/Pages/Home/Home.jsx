@@ -3,6 +3,7 @@ import "./Home.css";
 import Now from "../../Components/Now/Now";
 import Forecast from "../../Components/Forecast/Forecast";
 import Highlights from "../../Components/Highlights/Highlights";
+import Today from "../../Components/Today/Today";
 function Home() {
   return (
     <div className="home">
@@ -14,6 +15,7 @@ function Home() {
 
         <main>
           <Highlights />
+          <Today />
         </main>
       </div>
     </div>

@@ -1,7 +1,3 @@
-.home {
-  margin-top: 20px;
-}
-
 .home .container {
   display: flex;
   /* align-items: center; */
@@ -9,6 +5,7 @@
 }
 
 .home .container aside {
+  margin-top: 8px;
   display: flex;
   flex-direction: column;
   gap: 20px;

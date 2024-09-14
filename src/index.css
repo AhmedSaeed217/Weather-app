@@ -47,14 +47,18 @@ input[type="search"]::-webkit-search-results-decoration {
   --black-alpha-10: hsla(0, 0%, 0%, 0.1);
 
   /*Gradient color */
-  --gradient-1: linear-gradient(180deg,
-      hsla(270, 5%, 7%, 0) 0%,
-      hsla(270, 5%, 7%, 0.8) 65%,
-      hsl(270, 5%, 7%) 100%);
-  --gradient-2: linear-gradient(180deg,
-      hsla(260, 5%, 12%, 0) 0%,
-      hsla(260, 5%, 12%, 0.8) 65%,
-      hsl(260, 5%, 12%) 100%);
+  --gradient-1: linear-gradient(
+    180deg,
+    hsla(270, 5%, 7%, 0) 0%,
+    hsla(270, 5%, 7%, 0.8) 65%,
+    hsl(270, 5%, 7%) 100%
+  );
+  --gradient-2: linear-gradient(
+    180deg,
+    hsla(260, 5%, 12%, 0) 0%,
+    hsla(260, 5%, 12%, 0.8) 65%,
+    hsl(260, 5%, 12%) 100%
+  );
 
   /* Font Family  */
   --ff-nunito-sans: "Nunito Sans", sans-serif;
@@ -92,7 +96,6 @@ li {
   list-style: none;
 }
 
-
 a {
   text-decoration: none;
   color: inherit;
@@ -124,7 +127,7 @@ body {
   background-color: var(--background);
   color: var(--on-background);
   font-size: var(--body-3);
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 100vh;
 }
 

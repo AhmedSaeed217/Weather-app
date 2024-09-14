@@ -1,7 +1,6 @@
-import React, { useState } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/images/logo.png";
-function Navbar({ setSearchWord }) {
+function Navbar() {
   return (
     <header>
       <div className="container">

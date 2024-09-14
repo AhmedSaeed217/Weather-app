@@ -1,0 +1,30 @@
+.today .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .today-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.container .today-content span {
+  display: block;
+}
+
+.today-content .today-details {
+  background-color: var(--surface);
+  width: calc(100% / 9);
+  padding: 15px 20px;
+  border-radius: var(--radius-16);
+}
+
+.today-content .today-details img {
+  width: 60px;
+}
