@@ -39,3 +39,68 @@ header .location {
   border-radius: var(--radius-pill);
   cursor: pointer;
 }
+
+/* Responsive  */
+
+@media (max-width: 1000px) {
+  header .container {
+    justify-content: center;
+    gap: 40px;
+  }
+  header .logo img {
+    width: 160px;
+  }
+
+  header .search-box {
+    width: 370px;
+  }
+}
+
+@media (max-width: 810px) {
+  header .logo img {
+    width: 130px;
+  }
+
+  header .search-box {
+    width: 340px;
+    padding: 10px 5px;
+  }
+
+  /* .location span {
+    display: none;
+  } */
+  header .location {
+    width: fit-content;
+    padding: 10px 5px;
+  }
+  header .location svg {
+    font-size: 20px;
+  }
+  header .location span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  header .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  header .search-box {
+    order: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  header .location {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  header .location span {
+    display: none;
+  }
+}
