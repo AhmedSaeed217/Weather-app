@@ -46,3 +46,10 @@
   width: 50px; /* Optional: Set a fixed width for the date */
   /* text-align: right; Align text to the right if needed */
 }
+
+
+@media (max-width:650px) {
+  .forecast-days {
+    width: 100%;
+  }
+}

@@ -8,7 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   text-align: center;
   gap: 15px;
   width: 100%;
@@ -27,4 +26,33 @@
 
 .today-content .today-details img {
   width: 60px;
+}
+
+/* Responsive  */
+
+@media (max-width: 1024px) {
+  .today-content .today-details {
+    width: calc(100% / 6);
+  }
+}
+
+@media (max-width: 900px) {
+  .container .today-content {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .today-content .today-details {
+    width: calc(100% / 4);
+  }
+}
+
+@media (max-width: 550px) {
+  .today-content .today-details {
+    width: 100%;
+  }
+
+  .today-content .today-details img {
+    width: 50px;
+  }
 }

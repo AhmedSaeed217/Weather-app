@@ -1,31 +1,51 @@
 .footer {
-    width: 100%;
+  width: 100%;
 }
 
 .footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .footer p {
-    font-size: var(--title-1);
+  font-size: var(--title-1);
 }
 
 .footer p a {
-    color: var(--on-surface-variant);
-    font-size: 22px;
+  color: var(--on-surface-variant);
+  font-size: 22px;
 }
 
 .footer .openweather-rights {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: var(--title-2);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: var(--title-2);
 }
 
 .footer span a {
-    color: var(--on-surface-variant);
+  color: var(--on-surface-variant);
+}
+
+/* Responsive  */
+
+@media (max-width: 660px) {
+  .footer .container {
+    width: 75%;
+    text-align: center;
+  }
+
+  .footer .openweather-rights {
+    gap: 10px;
+    font-size: var(--label-1);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer .openweather-rights {
+    display: none;
+  }
 }

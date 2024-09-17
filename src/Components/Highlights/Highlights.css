@@ -146,3 +146,58 @@
   font-size: 30px;
   font-weight: bold;
 }
+
+/* Responsive  */
+
+@media (max-width: 900px) {
+  /* .highlights .container {
+    flex-direction: row;
+  } */
+  .top-highlights {
+    flex-direction: column;
+    width: 100%;
+  }
+  .top-highlights .air-quality,
+  .top-highlights .sunrise-sunset {
+    width: 100%;
+  }
+  /* .bottom-highlights{
+    flex-direction: column;
+  } */
+
+  .highlights .bottom-highlights {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .highlights .bottom-highlights .bottom-highlights-details {
+    width: 48%;
+  }
+}
+
+@media (max-width: 700px) {
+  .bottom-highlights-details .details svg {
+    font-size: 25px;
+  }
+  .bottom-highlights-details .details p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .air-quality .air-quality-info p {
+    font-size: 20px;
+  }
+  .sunrise-sunset-info svg {
+    font-size: 30px;
+  }
+  .sunrise-sunset-info p {
+    font-size: 20px;
+  }
+
+  .highlights .bottom-highlights .bottom-highlights-details {
+    width: 80%;
+  }
+}
