@@ -1,97 +1,37 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Forecast.css";
-import pic from "../../assets/images/weather_icons/01n.png";
-import pic2 from "../../assets/images/weather_icons/10n.png";
+import { WeatherContext } from "../../Context/Weather";
+import Forecastskeleton from "../Forecastskeleton/Forecastskeleton";
 export default function Forecast() {
-  return (
-    <div className="forecast">
-      <h3>5 Days Forecast</h3>
-      <div className="forecast-days">
-        <div className="day-details">
-          <div className="temp">
-            <img src={pic} alt="" />
-            <span>
-              7<sup>&deg;</sup>
-            </span>
-          </div>
+  const{dailyForecast,loading}=useContext(WeatherContext);
+  
 
-          <div className="date">
-            <span>2 Mar</span>
-          </div>
-
-          <div className="day">
-            <span>Thursday</span>
-          </div>
+  return <>
+  {loading?<Forecastskeleton/>: <div className="forecast">
+    <h3>5 Days Forecast</h3>
+    <div className="forecast-days">
+      {dailyForecast.map((day,index)=><div key={index} className="day-details">
+        <div className="temp">
+          <img src={`${process.env.PUBLIC_URL}/assets/images/weather_icons/${day.weather[0]?.icon}.png`} alt="" />
+          <span>
+            {Math.round(day.main.temp)}<sup>&deg;</sup>
+          </span>
+        </div>
+          
+        <div className="date">
+          <span>{day.dayNumber} {day.monthName.slice(0,3)}</span>
         </div>
 
-        <div className="day-details">
-          <div className="temp">
-            <img src={pic} alt="" />
-            <span>
-              7<sup>&deg;</sup>
-            </span>
-          </div>
-
-          <div className="date">
-            <span>3 Mar</span>
-          </div>
-
-          <div className="day">
-            <span>Friday</span>
-          </div>
+        <div className="day">
+          <span>{day.dayName}</span>
         </div>
-
-        <div className="day-details">
-          <div className="temp">
-            <img src={pic2} alt="" />
-            <span>
-              6<sup>&deg;</sup>
-            </span>
-          </div>
-
-          <div className="date">
-            <span>4 Mar</span>
-          </div>
-
-          <div className="day">
-            <span>Saturday</span>
-          </div>
-        </div>
-        <div className="day-details">
-          <div className="temp">
-            <img src={pic2} alt="" />
-            <span>
-              4<sup>&deg;</sup>
-            </span>
-          </div>
-
-          <div className="date">
-            <span>5 Mar</span>
-          </div>
-
-          <div className="day">
-            <span>Sunday</span>
-          </div>
-        </div>
-
-        <div className="day-details">
-          <div className="temp">
-            <img src={pic2} alt="" />
-            <span>
-              5<sup>&deg;</sup>
-            </span>
-          </div>
-
-          <div className="date">
-            <span>6 Mar</span>
-          </div>
-
-          <div className="day">
-            <span>Monday</span>
-          </div>
-        </div>
-
       </div>
+      )
+      
+      }
     </div>
-  );
+  </div>}
+  
+  
+  </>
 }

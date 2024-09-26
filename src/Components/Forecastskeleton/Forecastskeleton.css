@@ -1,0 +1,85 @@
+.forecast-skeleton {
+    background-color: var(--surface);
+    border-radius: var(--radius-28);
+    color: var(--on-surface);
+    padding: 10px 20px;
+    width: 350px;
+}
+
+.forecast-skeleton h3 {
+    margin-bottom: 10px;
+    padding: 0 10px;
+    animation: loading 1.5s infinite;
+
+}
+
+.forecast-skeleton .forecast-days {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.forecast-skeleton .forecast-days .day-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forecast-skeleton .day-details .temp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forecast-skeleton .day-details .skeleton-img {
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    border-radius: 50%;
+    animation: loading 1.5s infinite;
+}
+
+.skeleton-temp {
+    width: 30px;
+    height: 20px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    border-radius: 4px;
+    animation: loading 1.5s infinite;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    border-radius: 4px;
+    height: 20px;
+    animation: loading 1.5s infinite;
+}
+
+.forecast-skeleton .day-details .date,
+.forecast-skeleton .day-details .day {
+    color: var(--on-surface-variant);
+    flex: 1;
+}
+
+.forecast-skeleton .day-details .day {
+    width: 80px; /* Fixed width for consistency */
+}
+
+.forecast-skeleton .day-details .date {
+    width: 70px; /* Fixed width for the date */
+}
+
+/* Add loading animation */
+@keyframes loading {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+@media (max-width: 650px) {
+   .forecast-skeleton .forecast {
+        width: 100%;
+    }
+}

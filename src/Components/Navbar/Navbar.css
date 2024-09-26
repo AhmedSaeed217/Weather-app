@@ -22,13 +22,18 @@ header .search-box input {
   margin-left: 30px;
 }
 
-header .search-box svg {
+header .search-box button {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
 }
 
+header .search-box span{
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
 header .location {
   display: flex;
   gap: 5px;

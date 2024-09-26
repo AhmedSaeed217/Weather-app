@@ -37,15 +37,15 @@
 }
 
 .now .date,
-.now .location {
+.now .location,
+.now .time {
   display: flex;
   align-items: center;
   gap: 10px;
   color: var(--on-surface-variant);
 }
 
-
-@media (max-width:650px) {
+@media (max-width: 650px) {
   .now {
     width: 100%;
   }
